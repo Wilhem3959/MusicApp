@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="14dp"
+    android:id="@+id/cardView"
+    app:cardCornerRadius="14dp"
+    android:layout_margin="4dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+        <TextView
+            android:id="@+id/tv_SongName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="70dp"
+            android:textStyle="bold"
+            android:text="SongName"/>
+        <TextView
+            android:id="@+id/tv_ArtistName"
+            android:gravity="start"
+            android:layout_marginStart="70dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:text="Artist Name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/iv_art"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:text="price"
+            android:textSize="15dp"/> />
+
+        <TextView
+            android:id="@+id/tv_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="currency"
+            android:textSize="15dp"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
